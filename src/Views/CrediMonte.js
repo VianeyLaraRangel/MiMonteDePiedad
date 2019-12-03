@@ -11,14 +11,18 @@ class CrediMonte extends Component {
         return (
             <div className="home-box">
                 <img src={logo} className="home-logo" alt="logo" />
-                <h1>Tu CrediMonte</h1>
+                <p className="title-CrediMonte">Tu CrediMonte</p>
                 <section>
                     <Button color="info" className="btn-options">
                         <Link to="/sobreti">
-                           <p>Solicitud de CrediMonte</p>
-                    </Link>
+                            <p>Tus créditos</p>
+                        </Link>
                     </Button>
-                    <Button color="info" className="btn-options">Tu CrediMonte</Button>
+                    <Button color="info" className="btn-options">
+                        <Link to="/sobreti">
+                            <p>Consulta de estados de Cuenta</p>
+                        </Link>
+                    </Button>
                 </section>
             </div>
         );

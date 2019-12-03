@@ -49,3 +49,10 @@
     text-decoration: none;
     color: #ffff;
 }
+
+.title-CrediMonte {
+    color: #9E002F;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
