@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import BreadCrumbs from '../Components/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
@@ -11,9 +12,13 @@ class Home extends Component {
         return (
             <div className="home-box">
                 <img src={logo} className="home-logo" alt="logo" />
-                    <BreadCrumbs className="options-box" />
+                <BreadCrumbs className="options-box" />
                 <section>
-                    <Button color="info" className="btn-options">Solicitud de CrediMonte</Button>
+                    <Button color="info" className="btn-options">
+                        <Link to="/sobreti">
+                           <p>Solicitud de CrediMonte</p>
+                    </Link>
+                    </Button>
                     <Button color="info" className="btn-options">Tu CrediMonte</Button>
                 </section>
             </div>

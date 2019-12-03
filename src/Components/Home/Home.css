@@ -42,4 +42,10 @@
     width: 18rem;
     font-weight: 530;
     font-size: 18px;
+    height: 41px;
+}
+
+.btn-options a p {
+    text-decoration: none;
+    color: #ffff;
 }
