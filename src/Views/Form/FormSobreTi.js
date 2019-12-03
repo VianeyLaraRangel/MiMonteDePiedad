@@ -2,6 +2,9 @@ import React from 'react';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 
+import './FormSobreTi.css'
+//import {Logo} from "./monte_logo.png";
+
 const MyTextInput = ({ label, ...props }) => {
   
   const [field, meta] = useField(props);
@@ -21,7 +24,10 @@ const MyTextInput = ({ label, ...props }) => {
 const SignupForm = () => {
   return (
     <>
-      <h1>Sobre Ti</h1>
+      {/* <div className="sobreti-box">
+           <img src={Logo} className="sobreti-logo" alt="logo" />
+       </div> */}
+      <h1>Sobre tí</h1>
       <Formik
         initialValues={{
           curp: '',
@@ -30,7 +36,7 @@ const SignupForm = () => {
           ine: '',
         }}
         validationSchema={Yup.object({
-          curp: Yup.string()
+          fechnacimiento: Yup.string()
             .max(15, 'Debe tener 15 caracteres o menos')
             .required('Obligatorio'),
           ocupacion: Yup.string()
@@ -50,17 +56,17 @@ const SignupForm = () => {
           }, 400);
         }}
       >
-        <Form>
+        <Form className="formulario">
           <MyTextInput
-            label="CURP"
-            name="curp"
+            label="Fecha de Nacimiento"
+            name="fechnacimiento"
             type="text"
-            placeholder="CURP"
+            placeholder="dd/mm/aa"
           />
           <MyTextInput
             label="Ocupación"
             name="ocupacion"
-            type="text-area"
+            type="textarea"
             placeholder="Describe a que te dedicas"
           />
           <MyTextInput

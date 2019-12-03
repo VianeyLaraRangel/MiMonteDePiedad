@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from './Views/Home';
 import LogIn from './Views/LogIn';
 //import FormRequest from './Views/Formulario';
-import FormSobreTi from './Views/FormSobreTi';
-import FormPlanes from './Views/FormPlanes';
+import FormSobreTi from './Views/Form/FormSobreTi';
+import FormPlanes from './Views/Form/FormPlanes';
 import CreditProposal from './Views/CreditProposal';
 import Payment from './Views/Payment';
 
