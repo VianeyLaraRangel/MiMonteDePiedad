@@ -12,13 +12,13 @@ import Payment from './Views/Payment';
 class App extends Component {
   render() {
     return (
-      <Router basename={window.location.pathname || ''}>
+      <Router >
         <Switch>
           <Route exact path='/' component={SignUp} />
-          <Route exact path='/iniciasesion' component={Login} />
-          <Route exact path='/solicitudcredito' component={FormRequest} />
-          <Route exact path='/propuesta' component={CreditProposal} />
-          <Route exact path='/pago' component={Payment} />
+          <Route path='/iniciasesion' component={Login} />
+          <Route path='/solicitudcredito' component={FormRequest} />
+          <Route path='/propuesta' component={CreditProposal} />
+          <Route path='/pago' component={Payment} />
         </Switch>
       </Router>
     );
