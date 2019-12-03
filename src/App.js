@@ -11,6 +11,7 @@ import FormPlanes from './Views/FormPlanes';
 import CreditProposal from './Views/CreditProposal';
 import Payment from './Views/Payment';
 import CrediMonte from './Views/CrediMonte';
+import Credits from './Views/Credits';
 
 class App extends Component {
   render() {
@@ -24,6 +25,7 @@ class App extends Component {
           <Route path='/propuesta' component={CreditProposal} />
           <Route path='/pago' component={Payment} />
           <Route path='/tucredimonte' component={CrediMonte} />
+          <Route path='/tuscreditos' component={Credits} />
         </Switch>
       </Router>
     );

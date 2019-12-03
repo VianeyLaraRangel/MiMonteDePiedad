@@ -14,14 +14,12 @@ class CrediMonte extends Component {
                 <p className="title-CrediMonte">Tu CrediMonte</p>
                 <section>
                     <Button color="info" className="btn-options">
-                        <Link to="/sobreti">
+                        <Link to="/tuscreditos">
                             <p>Tus créditos</p>
                         </Link>
                     </Button>
                     <Button color="info" className="btn-options">
-                        <Link to="/sobreti">
-                            <p>Consulta de estados de Cuenta</p>
-                        </Link>
+                        <p>Consulta de estados de Cuenta</p>
                     </Button>
                 </section>
             </div>
