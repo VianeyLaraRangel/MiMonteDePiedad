@@ -1,6 +1,10 @@
 import React from 'react';
 import { Formik, Form, useField } from 'formik';
+import { Link } from "react-router-dom";
 import * as Yup from 'yup';
+
+import './FormSobreTi.css'
+//import {Logo} from "./monte_logo.png";
 
 const MyTextInput = ({ label, ...props }) => {
   
@@ -21,27 +25,38 @@ const MyTextInput = ({ label, ...props }) => {
 const SignupForm = () => {
   return (
     <>
-      <h1>Sobre Ti</h1>
+      {/* <div className="sobreti-box">
+           <img src={Logo} className="sobreti-logo" alt="logo" />
+       </div> */}
+      <h1 className="title">Conociendote:</h1>
       <Formik
         initialValues={{
-          curp: '',
-          ocupacion: '',
-          rfc: '',
+          fechnacimiento: '',
+          nonmp: '',
+          lugarnacimiento:'',
           ine: '',
+          ocupacion:'',
+          cuentanos:'',
         }}
         validationSchema={Yup.object({
-          curp: Yup.string()
-            .max(15, 'Debe tener 15 caracteres o menos')
+          fechnacimiento: Yup.string()
+            .max(8, 'Debe seleccionar una fecha')
             .required('Obligatorio'),
-          ocupacion: Yup.string()
-            .max(35, 'Debe tener 35 caracteres o menos')
+          nonmp: Yup.string()
+            .max(6, 'Debes de ingresar tu numero de Cliente Monte de Piedad')
             .required('Obligatorio'),
-          rfc: Yup.string()
-            .max(13,'RFC incorrecto, Verifica en el link')
+          lugarnacimientolugarnacimiento: Yup.string()
+          .max(15, 'Debe tener 13 o 12 caracteres')
             .required('Obligatorio'),
           ine: Yup.string()
           .max(15, 'Debe tener 13 o 12 caracteres')
             .required('Obligatorio'),
+          ocupacion: Yup.string()
+          .max(30, 'Debe tener 30 caracteres')
+            .required('Obligatorio'),
+          cuentanos: Yup.string()
+          .max(200, 'Debe tener 200 caracteres')
+          .required('Obligatorio'),
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -50,32 +65,49 @@ const SignupForm = () => {
           }, 400);
         }}
       >
-        <Form>
-          <MyTextInput
-            label="CURP"
-            name="curp"
+        <Form className="frmSobreTi">
+          <MyTextInput className="input-date"
+            label="¿En qué día naciste?"
+            name="fechnacimiento"
+            type="date"
+            placeholder="aaaa/mm/dd"
+          />
+          <MyTextInput className="number-imput"
+            label="No.NMP"
+            name="nonmp"
+            type="number"
+            placeholder="(Opcional)"
+          />
+          <MyTextInput className="input-date"
+            label="¿Donde Nasiste?"
+            name="lugarnacimiento"
             type="text"
-            placeholder="CURP"
+            placeholder="localidad"
           />
-          <MyTextInput
-            label="Ocupación"
-            name="ocupacion"
-            type="text-area"
-            placeholder="Describe a que te dedicas"
-          />
-          <MyTextInput
-            label="RFC"
-            name="rfc"
-            type="text"
-            placeholder="Ingresa tu RFC con omoclave"
-          />
-          <MyTextInput
+          <MyTextInput className="input-text"
             label="INE"
             name="ine"
             type="text"
             placeholder="Ejem.<<0747116375842"
           />
-          <button type="submit">Siguiente</button>
+           <MyTextInput className="input-text"
+            label="¿A que te dedicas?"
+            name="ocupacion"
+            type="text"
+            size="15" 
+            maxlength="30" 
+            placeholder="A que te dedicas"
+          />
+          <MyTextInput className="descripcion"
+            label="Cuentanos sobre tu Negocio / Ocupación" 
+            name="cuentanos"
+            type="textarea"
+            size="15" 
+            maxlength="200" 
+            placeholder="Compartenos tu opinion"
+          />
+          <Link to="/tusplanes">
+          <button type="submit" className="siguiente-btn">Siguiente</button></Link>
         </Form>
       </Formik>
     </>

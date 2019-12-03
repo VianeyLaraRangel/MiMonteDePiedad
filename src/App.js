@@ -9,6 +9,7 @@ import SignUp from './Views/SignUp';
 import CodeVerif from './Views/CodeVerif';
 import FormSobreTi from './Views/FormSobreTi';
 import FormPlanes from './Views/FormPlanes';
+import DetalleCredito from './Views/DetalleCredito';
 import CreditProposal from './Views/CreditProposal';
 import Payment from './Views/Payment';
 import CrediMonte from './Views/CrediMonte';
@@ -20,15 +21,15 @@ class App extends Component {
       <Router>
         <Switch>
           <Route exact path='/' component={LogIn} />
-          <Route exact path='/SignUp' component={SignUp} />
-          <Route exact path='/CodeVerif' component={CodeVerif} />
-          <Route exact path='/inicio' component={Home} /> 
-          <Route exact path='/sobreti' component={FormSobreTi} />
-          <Route exact path='/tusplanes' component={FormPlanes} />
-          <Route exact path='/propuesta' component={CreditProposal} />
-          <Route exact path='/pago' component={Payment} />
-          <Route exact path='/tucredimonte' component={CrediMonte} />
-          <Route exact path='/tuscreditos' component={Credits} />
+          <Route  path='/SignUp' component={SignUp} />
+          <Route  path='/CodeVerif' component={CodeVerif} />
+          <Route  path='/inicio' component={Home} /> 
+          <Route  path='/sobreti' component={FormSobreTi} />
+          <Route  path='/tusplanes' component={FormPlanes} />
+          <Route  path='/propuesta' component={CreditProposal} />
+          <Route  path='/pago' component={Payment} />
+          <Route  path='/tucredimonte' component={CrediMonte} />
+          <Route  path='/tuscreditos' component={Credits} />
         </Switch>
       </Router>
     );
