@@ -10,7 +10,12 @@ class CrediMonte extends Component {
     render() {
         return (
             <div className="home-box">
-                <img src={logo} className="home-logo" alt="logo" />
+                <Link to="/inicio" className="brand-box">
+                    <a className="back-icon">
+                        <i class="fas fa-chevron-left"></i>
+                        <img src={logo} className="home-logoCredi" alt="logo" />
+                    </a>
+                </Link>
                 <p className="title-CrediMonte">Tu CrediMonte</p>
                 <section>
                     <Button color="info" className="btn-options">

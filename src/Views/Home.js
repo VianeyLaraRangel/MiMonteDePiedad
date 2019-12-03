@@ -15,12 +15,14 @@ class Home extends Component {
                 <BreadCrumbs className="options-box" />
                 <section>
                     <Button color="info" className="btn-options">
-                        <Link to="/tuscreditos">
+                        <Link to="/sobreti">
                             <p>Solicitud de CrediMonte</p>
                         </Link>
                     </Button>
                     <Button color="info" className="btn-options">
-                            <p>Tu CrediMonte</p>
+                        <Link to="/tucredimonte">
+                        <p>Tu CrediMonte</p>
+                        </Link>
                     </Button>
                 </section>
             </div>
