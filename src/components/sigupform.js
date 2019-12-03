@@ -74,6 +74,7 @@ class Signup extends Component {
        
        Te enviaremos un codigo SMS para verificar tu telefono</h1>
 
+
         <button type="button" className="btn-signup" >
           Enviar
         </button>

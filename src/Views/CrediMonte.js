@@ -1,28 +1,30 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import BreadCrumbs from '../Components/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
 
 import '../Components/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
-class Home extends Component {
+class CrediMonte extends Component {
     render() {
         return (
             <div className="home-box">
-                <img src={logo} className="home-logo" alt="logo" />
-                <BreadCrumbs className="options-box" />
+                <Link to="/inicio" className="brand-box">
+                    <a className="back-icon">
+                        <i class="fas fa-chevron-left"></i>
+                        <img src={logo} className="home-logoCredi" alt="logo" />
+                    </a>
+                </Link>
+                <p className="title-CrediMonte">Tu CrediMonte</p>
                 <section>
                     <Button color="info" className="btn-options">
-                        <Link to="/sobreti">
-                            <p>Solicitud de CrediMonte</p>
+                        <Link to="/tuscreditos">
+                            <p>Tus créditos</p>
                         </Link>
                     </Button>
                     <Button color="info" className="btn-options">
-                        <Link to="/tucredimonte">
-                        <p>Tu CrediMonte</p>
-                        </Link>
+                        <p>Consulta de estados de Cuenta</p>
                     </Button>
                 </section>
             </div>
@@ -30,4 +32,4 @@ class Home extends Component {
     }
 }
 
-export default Home;
+export default CrediMonte;
