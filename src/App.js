@@ -8,17 +8,21 @@ import LogIn from './Views/LogIn';
 import FormRequest from './Views/FormRequest';
 import CreditProposal from './Views/CreditProposal';
 import Payment from './Views/Payment';
+import Formulario from './Views/Formulario';
 
 class App extends Component {
   render() {
     return (
       <Router basename={process.env.PUBLIC_URL} >
         <Switch>
-          <Route exact path='/' component={LogIn} />
-          <Route path='/inicio' component={Home} /> 
-          <Route path='/solicitudcredito' component={FormRequest} />
-          <Route path='/propuesta' component={CreditProposal} />
-          <Route path='/pago' component={Payment} />
+
+          <Route exact path='/' component={SignUp} />
+          <Route exact path='/iniciasesion' component={Login} />
+          <Route exact path='/solicitudcredito' component={FormRequest} />
+          <Route exact path='/propuesta' component={CreditProposal} />
+          <Route exact path='/pago' component={Payment} />
+          <Route exact path='/formulario' component={Formulario} />
+
         </Switch>
       </Router>
     );
