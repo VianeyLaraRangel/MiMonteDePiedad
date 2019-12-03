@@ -1,11 +1,10 @@
 import React from 'react';
-
+//import ReactDOM from 'react-dom';
 import { Formik, Form, useField } from 'formik';
-import styled from '@emotion/styled';
 import * as Yup from 'yup';
 
 const MyTextInput = ({ label, ...props }) => {
-
+  
   const [field, meta] = useField(props);
   return (
     <>
@@ -19,9 +18,7 @@ const MyTextInput = ({ label, ...props }) => {
 };
 
 const MyCheckbox = ({ children, ...props }) => {
-  // We need to tell useField what type of input this is
-  // since React treats radios and checkboxes differently
-  // than inputs/select/textarea.
+
   const [field, meta] = useField({ ...props, type: 'checkbox' });
   return (
     <>
@@ -36,27 +33,17 @@ const MyCheckbox = ({ children, ...props }) => {
   );
 };
 
-// Styled components ....
-const StyledSelect = styled.select`
-  /** ... * /
-`;
-
-const StyledErrorMessage = styled.div`
-  /** ... * /
-`;
-
-const StyledLabel = styled.label`
- /** ...* /
-`;
 
 const MySelect = ({ label, ...props }) => {
+  // useField() returns [formik.getFieldProps(), formik.getFieldMeta()]
+  // which we can spread on <input> and alse replace ErrorMessage entirely.
   const [field, meta] = useField(props);
   return (
     <>
-      <StyledLabel htmlFor={props.id || props.name}>{label}</StyledLabel>
-      <StyledSelect {...field} {...props} />
+      <label htmlFor={props.id || props.name}>{label}</label>
+      <select {...field} {...props} />
       {meta.touched && meta.error ? (
-        <StyledErrorMessage>{meta.error}</StyledErrorMessage>
+        <errormessage>{meta.error}</errormessage>
       ) : null}
     </>
   );
@@ -72,8 +59,8 @@ const SignupForm = () => {
           firstName: '',
           lastName: '',
           email: '',
-          acceptedTerms: false, // added for our checkbox
-          jobType: '', // added for our select
+          acceptedTerms: false, // checkbox
+          jobType: '', // añade un select select
         }}
         validationSchema={Yup.object({
           firstName: Yup.string()
