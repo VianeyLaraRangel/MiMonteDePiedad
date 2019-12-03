@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Button, Table } from 'reactstrap';
 
-import '../Components/Home/Home.css';
+import '../UserFlow/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
 class Credits extends Component {

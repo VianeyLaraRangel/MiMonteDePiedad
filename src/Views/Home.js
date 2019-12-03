@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import BreadCrumbs from '../Components/Home/BreadCrumbs';
+import BreadCrumbs from '../UserFlow/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
 
-import '../Components/Home/Home.css';
+import '../UserFlow/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
 class Home extends Component {
