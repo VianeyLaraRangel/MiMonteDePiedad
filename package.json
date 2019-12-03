@@ -2,7 +2,7 @@
   "name": "mimontedepiedad",
   "version": "0.1.0",
   "private": true,
-  "homepage": ".",
+  "homepage": "https://vianeylararangel.github.io/MiMonteDePiedad/mimontedepiedad",
   "dependencies": {
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
