@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import '../Home/Home.css';
 
 const NavBar = (props) => {
     const [collapsed, setCollapsed] = useState(true);
@@ -7,7 +8,6 @@ const NavBar = (props) => {
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
-        <div>
             <Navbar color="faded" light>
                 <NavbarBrand href="/" className="mr-auto">CrediMonte</NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="mr-2" />
@@ -22,7 +22,6 @@ const NavBar = (props) => {
                     </Nav>
                 </Collapse>
             </Navbar>
-        </div>
     );
 }
 
