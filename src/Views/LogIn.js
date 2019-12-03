@@ -11,8 +11,8 @@ class LogIn extends Component {
           <img src={logo} className="logo-app" alt="logo" />
           <CodeForm />
 
-          <h1 className="greeting-login" >Olvidaste tu contraseña</h1>
-          <h1 className="greeting-login" >Registrate aqui</h1>
+          <h1 >Olvidaste tu contraseña</h1>
+          <h1 >Registrate aqui</h1>
 
         </div>
       </div>
