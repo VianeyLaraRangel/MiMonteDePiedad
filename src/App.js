@@ -11,6 +11,7 @@ import CodeVerif from './Views/CodeVerif';
 //import FormRequest from './Views/Formulario';
 import FormSobreTi from './Views/FormSobreTi';
 import FormPlanes from './Views/FormPlanes';
+import DetalleCredito from './Views/DetalleCredito';
 import CreditProposal from './Views/CreditProposal';
 import Payment from './Views/Payment';
 import CrediMonte from './Views/CrediMonte';
@@ -27,6 +28,7 @@ class App extends Component {
           <Route path='/inicio' component={Home} /> 
           <Route path='/sobreti' component={FormSobreTi} />
           <Route path='/tusplanes' component={FormPlanes} />
+          <Route path='/detalles' component={DetalleCredito} />
           <Route path='/propuesta' component={CreditProposal} />
           <Route path='/pago' component={Payment} />
           <Route path='/tucredimonte' component={CrediMonte} />
