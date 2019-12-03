@@ -81,7 +81,7 @@ const SignupForm = () => {
             placeholder="Ejem.<<0747116375842"
           />
            <MyTextInput
-            label="Ocupación"
+            label="¿A que te dedicas?"
             name="ocupacion"
             type="text"
             size="15" 
