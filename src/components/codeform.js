@@ -24,7 +24,7 @@ class CodeForm extends Component {
           onChange={this.onChange}
         />
         <br></br>
-        <Link to="/home">
+        <Link to="/inicio">
         <button type="button" className="btn-green" >
           INGRESAR
         </button>
