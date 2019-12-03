@@ -9,7 +9,7 @@
     margin-left: 7rem;
 }
 
-h1 {
+.title {
     margin-top: 10%;
     color: #9E002F;
     font-style: normal;
@@ -22,9 +22,9 @@ text-align: center;
 letter-spacing: -0.165px;
 }
 
-input[type="text"],
-input[type="text"],
-input[type="date"],
+.input-date,
+.number-input,
+.input-text,
 textarea,
 select {
     -webkit-appearance: none; -moz-appearance: none;
@@ -36,7 +36,7 @@ select {
     font-size: 17px;
 }
 
-input[type="textarea"] {
+.descripcion {
     -webkit-appearance: none; -moz-appearance: none;
     display: block;
     margin: 0;
@@ -52,10 +52,10 @@ label {
   color: #9E002F;
   font-size: 17px;
   display: block;
-}
+} 
 
 
-button[type="submit"] {
+.siguiente-btn {
   margin-top: 3rem;
   background-color: #9E002F;
   color:#FFFFFF;
@@ -69,8 +69,8 @@ button[type="submit"] {
  -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
 }
 
-.formulario {
-    margin-top: 5rem;
+.formPlanes {
+    margin-top: 2rem;
     width: 90%;
     margin-left: 5%;
 }

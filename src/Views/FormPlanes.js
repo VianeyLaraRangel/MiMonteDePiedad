@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form, useField } from 'formik';
+import { Link } from "react-router-dom";
 import * as Yup from 'yup';
 
 import './FormPlanes.css'
@@ -39,7 +40,7 @@ const MySelect = ({ label, ...props }) => {
 const SignupForm = () => {
   return (
     <>
-      <h1>Sobre tí</h1>
+      <h1 className='title'>¿Cuáles son tus planes?</h1>
       <Formik
         initialValues={{
           planes: '',
@@ -61,11 +62,7 @@ const SignupForm = () => {
             ["op1", "op2", "op3", "op4"],
             "Selecciona una opción")
           .required("Obligatorio"),
-          percdtc: Yup.string()
-          .oneOf(
-            ["op1", "op2", "op3",],
-            "Selecciona tu estatus")
-          .required("Obligatorio"),
+       
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -75,34 +72,27 @@ const SignupForm = () => {
         }}
       >
         <Form className="formPlanes">
-          <MyTextInput
-            label="¿Cuáles son tus planes?"
+          <MyTextInput className="input-date"
             name="planes"
             type="textarea"
             placeholder="Describe tus planes"
           />
-           <MyTextInput
+           <MyTextInput className="number-imput"
             label="¿Cuánto necesitas?"
             name="ctonecesitas"
             type="number"
             placeholder="Ingresa la Cantidad Deseada"
           />
-          <MySelect label="Plazo" name="plazo">
+          <MySelect label="¿Enque tiempo puedes cubrirlo?" name="plazo">
             <option value="">Selecciona una opción</option>
             <option value="op1">3 meses</option>
             <option value="op2">6 meses</option>
             <option value="op3">18 meses</option>
             <option value="op4">24 meses</option>
           </MySelect>
-          <MySelect label="¿Cual es tu perfil Crediticio?" name="plazo">
-            <option value="">Selecciona una opción</option>
-            <option value="op1">Excelente</option>
-            <option value="op2">Bueno</option>
-            <option value="op3">Regular</option>
-            
-          </MySelect>
-
-          <button type="submit">Calcular</button>
+         
+          <Link to="/detalles">
+          <button type="submit" className="siguiente-btn">Calcular</button></Link>
         </Form>
       </Formik>
     </>
