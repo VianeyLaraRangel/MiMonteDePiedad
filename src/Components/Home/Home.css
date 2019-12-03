@@ -70,7 +70,7 @@
     color: #9E002F;
     font-weight: 600;
     font-size: 1.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
 }
 
 .fas {
@@ -103,7 +103,47 @@ thead tr th {
     padding: 5px;
     border-top: 0px;
     border-right: 0px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #c02a2a;
     border-left: 0px;
 }
 
+.num-cred{
+    font-size: 20px;
+    color: #9E002F;
+    vertical-align: bottom;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    /* border-bottom: solid 2px #c02a2a; */
+}
+
+.table thead th {
+    vertical-align: bottom;
+}
+
+.credit-table {
+    /* color: #5B534F; */
+    font-weight: 500;
+   
+}
+
+.credit-table {
+    /* color: #5B534F; */
+    font-weight: 500;
+}
+
+.credit-table {
+    /* color: #5B534F; */
+    font-weight: 500;
+    /* border: solid 1px #5B534F; */
+    border-radius: 10px;
+}
+
+table {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    
+}

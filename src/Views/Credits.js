@@ -18,11 +18,11 @@ class Credits extends Component {
                 </Link>
                 <p className="title-CrediMonte">Tus Creditos</p>
                 <section className="box-table">
-                    <Table className="credit-table" border="1" cellspacing="0">
+                    <Table className="credit-table"  cellspacing="0">
                         <thead>
                             <tr className="tr-without">
-                                <th>No.5674890</th>
-                                <th>$10,000</th>
+                                <th class="num-cred"> No.5674890</th>
+                                <th class="num-cred">$10,000</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -36,6 +36,25 @@ class Credits extends Component {
                             </tr>
                         </tbody>
                     </Table>
+                     <Table className="credit-table"  cellspacing="0">
+                        <thead>
+                            <tr className="tr-without">
+                                <th class="num-cred"> No.5674890</th>
+                                <th class="num-cred">$15,000</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr className="tr-red">
+                                <th scope="row">Pagos realizados</th>
+                                <td>$2,116</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Pagos restantes</th>
+                                <td>$10,834</td>
+                            </tr>
+                        </tbody>
+                    </Table>
+
                 </section>
             </div>
         );
