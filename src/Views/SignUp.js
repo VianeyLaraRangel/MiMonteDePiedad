@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import Signup from '../components/sigupform';
 import logo from "../img/monte_logo.png";
+import '../App.css';
+
 
 
 class SignUp extends Component {
@@ -8,8 +11,9 @@ class SignUp extends Component {
             <div className="signup-screen">
             <div className="backg-img">
           <img src={logo} className="logo-signup" alt="logo" />    
-          <h1 className="greeting-login"></h1>
-          </div>
+          <h1 className="greeting-login">Registrarse</h1>
+          <Signup />
+              </div>
           </div>
         );
     }

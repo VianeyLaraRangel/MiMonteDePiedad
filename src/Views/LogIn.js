@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import logo from "../img/monte-de-piedad-white.png";
-import CodeForm from '../Components/codeform';
+import CodeForm from '../components/codeform';
 import '../App.css';
 
 class LogIn extends Component {
@@ -11,8 +11,8 @@ class LogIn extends Component {
           <img src={logo} className="logo-app" alt="logo" />
           <CodeForm />
 
-          <h1 className="greeting-login" >Olvidaste tu contraseña</h1>
-          <h1 className="greeting-login" >Registrate aqui</h1>
+          <h1 >Olvidaste tu contraseña</h1>
+          <h1 >Registrate aqui</h1>
 
         </div>
       </div>

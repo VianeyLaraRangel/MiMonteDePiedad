@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 // import NavBar from '../Components/Home/NavBarHome';
-import HomeLinks from '../Components/Home/BreadCrumbs';
+import BreadCrumb from '../components/Components/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
 
-import '../Components/Home/Home.css';
+import '../components/Components/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
 class Home extends Component {
@@ -13,7 +13,7 @@ class Home extends Component {
             <div className="home-box">
                 <img src={logo} className="logo-app" alt="logo" />
                 <section>
-                    <HomeLinks />
+                    <BreadCrumb />
                 </section>
                 <section>
                     <Button color="info">Solicitar CrediMonte ></Button>
