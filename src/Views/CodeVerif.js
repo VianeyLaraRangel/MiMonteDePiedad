@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import VerifNum from '../components/VerifNume';
+import VerifNum from '../Components/VerifNume';
 import '../App.css';
 
 class CodeVerif extends Component {
