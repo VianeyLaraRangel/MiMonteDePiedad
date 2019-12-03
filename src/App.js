@@ -12,7 +12,7 @@ import Payment from './Views/Payment';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={window.location.pathname || ''}>
         <Switch>
           <Route exact path='/' component={SignUp} />
           <Route exact path='/iniciasesion' component={Login} />
