@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { Button } from 'reactstrap';
 
-import '../Components/Home/Home.css';
+import 'components/Components/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
 class CrediMonte extends Component {

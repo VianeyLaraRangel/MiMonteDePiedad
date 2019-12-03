@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import BreadCrumbs from '../Components/Home/BreadCrumbs';
+import BreadCrumb from '../components/Components/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
 
-import '../Components/Home/Home.css';
+import './components/Components/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
 class Home extends Component {
@@ -12,7 +12,7 @@ class Home extends Component {
         return (
             <div className="home-box">
                 <img src={logo} className="home-logo" alt="logo" />
-                <BreadCrumbs className="options-box" />
+                <BreadCrumb className="options-box" />
                 <section>
                     <Button color="info" className="btn-options">
                         <Link to="/sobreti">

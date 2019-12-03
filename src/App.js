@@ -7,7 +7,7 @@ import Home from './Views/Home';
 import LogIn from './Views/LogIn';
 import SignUp from './Views/SignUp';
 import CodeVerif from './Views/CodeVerif';
-import FormRequest from './Views/Formulario';
+// import FormRequest from './Views/Formulario';
 //import FormRequest from './Views/Formulario';
 import FormSobreTi from './Views/FormSobreTi';
 import FormPlanes from './Views/FormPlanes';
