@@ -4,7 +4,6 @@
   "private": true,
   "homepage": ".",
   "dependencies": {
-
     "@emotion/core": "^10.0.22",
     "@emotion/styled": "^10.0.23",
     "formik": "^2.0.6",
