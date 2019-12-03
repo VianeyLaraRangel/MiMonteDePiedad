@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Signup from '../components/sigupform';
+import Signup from '../Components/Sigupform';
 import logo from "../img/monte_logo.png";
 import '../App.css';
 

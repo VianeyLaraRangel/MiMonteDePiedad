@@ -1,23 +1,45 @@
 {
   "name": "mimontedepiedad",
-  "version": "1.1.1",
-  "description": "WebApp para solicitar creditos a Monte de Piedad",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": ".",
+  "dependencies": {
+    "@emotion/core": "^10.0.22",
+    "@emotion/styled": "^10.0.23",
+    "formik": "^2.0.6",
+    "bootstrap": "^4.4.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-mdl": "^1.11.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.2.0",
+    "yup": "^0.27.0",
+    "reactstrap": "^8.1.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/VianeyLaraRangel/MiMonteDePiedad.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "keywords": [
-    "React",
-    "NacionalMonteDePiedad"
-  ],
-  "author": "Mercedes, Pamela, Ursula y Vianey",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/VianeyLaraRangel/MiMonteDePiedad/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/VianeyLaraRangel/MiMonteDePiedad#readme"
+  "devDependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }

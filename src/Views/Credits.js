@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import { Button, Table } from 'reactstrap';
+import {  Table } from 'reactstrap';
 
-import '../UserFlow/Home/Home.css';
+import '../Components/Home/Home.css';
 import logo from '../img/monte_logo.png';
 
 class Credits extends Component {
