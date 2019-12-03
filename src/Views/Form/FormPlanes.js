@@ -2,6 +2,9 @@ import React from 'react';
 import { Formik, Form, useField } from 'formik';
 import * as Yup from 'yup';
 
+import './FormPlanes.css'
+//import {Logo} from "./monte_logo.png";
+
 const MyTextInput = ({ label, ...props }) => {
   
   const [field, meta] = useField(props);
@@ -36,36 +39,33 @@ const MySelect = ({ label, ...props }) => {
 const SignupForm = () => {
   return (
     <>
-      <h1>Tus Planes</h1>
+      <h1>Sobre tí</h1>
       <Formik
         initialValues={{
           planes: '',
-          jobType: '', // añade un select select
-          ocupacion: '',
-          rfc: '',
-          acceptedTerms: false, // checkbox
+          ctonecesitas:'',
+          plazo:'', // añade un select select
+          percdtc: '', // añade un select select
+         
           
         }}
         validationSchema={Yup.object({
           planes: Yup.string()
             .max(200, 'Debe tener 15 caracteres o menos')
-            .required('Required'),
-            ctonecesitas: Yup.string()
-            .oneOf(
-              ['op1', 'op2', 'op3', 'op4','op5','op6','other'],
-              'Invalid Job Type'
-            )
-            .required('Required'),
-          ocupacion: Yup.string()
-            .max(35, 'Debe tener 35 caracteres o menos')
-            .required('Required'),
-          email: Yup.string()
-            .max(17,'RFC incorrecto')
-            .required('Required'),
-          acceptedTerms: Yup.boolean()
-            .required('Required')
-            .oneOf([true], 'You must accept the terms and conditions.'),
-          
+            .required('Obligatorio'),
+          ctonecesitas: Yup.string()
+            .max(10, 'Debe tener 10 caracteres o menos')
+            .required('Obligatorio'),
+          plazo: Yup.string()
+          .oneOf(
+            ["op1", "op2", "op3", "op4"],
+            "Selecciona una opción")
+          .required("Obligatorio"),
+          percdtc: Yup.string()
+          .oneOf(
+            ["op1", "op2", "op3",],
+            "Selecciona tu estatus")
+          .required("Obligatorio"),
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -74,39 +74,35 @@ const SignupForm = () => {
           }, 400);
         }}
       >
-        <Form>
+        <Form className="formPlanes">
           <MyTextInput
             label="¿Cuáles son tus planes?"
             name="planes"
-            type="text-area"
+            type="textarea"
             placeholder="Describe tus planes"
           />
-          <MySelect label="¿Cuanto necesitas?" name="ctonecesitas">
-            <option value="">Seleccione una opción</option>
-            <option value="op1">$5,000.00 a $7,500.00</option>
-            <option value="op2">$7,500.00 a $10,000.00</option>
-            <option value="op3">$10,000.00 a $12,500.00</option>
-            <option value="op4">$12,500.00 a $15,000.00</option>
-            <option value="op5">$15,000.00 a $17,500.00</option>
-            <option value="op6">$17,500.00 a $20,000.00</option>
-            <option value="other">Other</option>
+           <MyTextInput
+            label="¿Cuánto necesitas?"
+            name="ctonecesitas"
+            type="number"
+            placeholder="Ingresa la Cantidad Deseada"
+          />
+          <MySelect label="Plazo" name="plazo">
+            <option value="">Selecciona una opción</option>
+            <option value="op1">3 meses</option>
+            <option value="op2">6 meses</option>
+            <option value="op3">18 meses</option>
+            <option value="op4">24 meses</option>
           </MySelect>
-          <MyTextInput
-            label="Ocupación"
-            name="ocupacion"
-            type="text-area"
-            placeholder="Describe a que te dedicas"
-          />
-          <MyTextInput
-            label="RFC"
-            name="rfc"
-            type="text"
-            placeholder="Ingresa tu RFC con omoclave"
-          />
-          
-          
+          <MySelect label="¿Cual es tu perfil Crediticio?" name="plazo">
+            <option value="">Selecciona una opción</option>
+            <option value="op1">Excelente</option>
+            <option value="op2">Bueno</option>
+            <option value="op3">Regular</option>
+            
+          </MySelect>
 
-          <button type="submit">Siguiente</button>
+          <button type="submit">Calcular</button>
         </Form>
       </Formik>
     </>

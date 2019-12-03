@@ -1,4 +1,3 @@
-
 .sobreti-box {
     text-align: center;
     width: 100vw;
@@ -25,7 +24,7 @@ letter-spacing: -0.165px;
 
 input[type="text"],
 input[type="text"],
-input[type="number"],
+input[type="date"],
 textarea,
 select {
     -webkit-appearance: none; -moz-appearance: none;
@@ -50,7 +49,7 @@ input[type="textarea"] {
 
 label {
   margin-top: 2rem;
-  color:#000000;
+  color: #9E002F;
   font-size: 17px;
   display: block;
 }
@@ -70,7 +69,7 @@ button[type="submit"] {
  -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;
 }
 
-.formPlanes {
+.formulario {
     margin-top: 5rem;
     width: 90%;
     margin-left: 5%;

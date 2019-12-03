@@ -1,5 +1,6 @@
 import React from 'react';
 import { Formik, Form, useField } from 'formik';
+import { Link } from "react-router-dom";
 import * as Yup from 'yup';
 
 import './FormSobreTi.css'
@@ -30,24 +31,28 @@ const SignupForm = () => {
       <h1>Sobre tí</h1>
       <Formik
         initialValues={{
-          curp: '',
-          ocupacion: '',
-          rfc: '',
+          fechnacimiento: '',
+          nonmp: '',
           ine: '',
+          ocupacion:'',
+          cuentanos:'',
         }}
         validationSchema={Yup.object({
           fechnacimiento: Yup.string()
-            .max(15, 'Debe tener 15 caracteres o menos')
+            .max(8, 'Debe seleccionar una fecha')
             .required('Obligatorio'),
-          ocupacion: Yup.string()
-            .max(35, 'Debe tener 35 caracteres o menos')
-            .required('Obligatorio'),
-          rfc: Yup.string()
-            .max(13,'RFC incorrecto, Verifica en el link')
+          nonmp: Yup.string()
+            .max(6, 'Debes de ingresar tu numero de Cliente Monte de Piedad')
             .required('Obligatorio'),
           ine: Yup.string()
           .max(15, 'Debe tener 13 o 12 caracteres')
             .required('Obligatorio'),
+          ocupacion: Yup.string()
+          .max(30, 'Debe tener 30 caracteres')
+            .required('Obligatorio'),
+          cuentanos: Yup.string()
+          .max(200, 'Debe tener 200 caracteres')
+          .required('Obligatorio'),
         })}
         onSubmit={(values, { setSubmitting }) => {
           setTimeout(() => {
@@ -60,20 +65,14 @@ const SignupForm = () => {
           <MyTextInput
             label="Fecha de Nacimiento"
             name="fechnacimiento"
-            type="text"
-            placeholder="dd/mm/aa"
+            type="date"
+            placeholder="aaaa/mm/dd"
           />
           <MyTextInput
-            label="Ocupación"
-            name="ocupacion"
-            type="textarea"
-            placeholder="Describe a que te dedicas"
-          />
-          <MyTextInput
-            label="RFC"
-            name="rfc"
-            type="text"
-            placeholder="Ingresa tu RFC con omoclave"
+            label="No.NMP"
+            name="nonmp"
+            type="number"
+            placeholder="(Opcional)"
           />
           <MyTextInput
             label="INE"
@@ -81,7 +80,24 @@ const SignupForm = () => {
             type="text"
             placeholder="Ejem.<<0747116375842"
           />
-          <button type="submit">Siguiente</button>
+           <MyTextInput
+            label="Ocupación"
+            name="ocupacion"
+            type="text"
+            size="15" 
+            maxlength="30" 
+            placeholder="A que te dedicas"
+          />
+          <MyTextInput className="descripcion"
+            label="Cuentanos sobre tu Negocio / Ocupación" 
+            name="cuentanos"
+            type="textarea"
+            size="15" 
+            maxlength="200" 
+            placeholder="Compartenos tu opinion"
+          />
+          <Link to="/tusplanes">
+          <button type="submit">Siguiente</button></Link>
         </Form>
       </Formik>
     </>
