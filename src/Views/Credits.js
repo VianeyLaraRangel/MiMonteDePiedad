@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import {  Table } from 'reactstrap';
+import { Table, Button } from 'reactstrap';
 
 import '../Components/Home/Home.css';
 import logo from '../img/monte_logo.png';
@@ -10,12 +10,12 @@ class Credits extends Component {
     render() {
         return (
             <div className="home-box">
-                <Link to="/tucredimonte" className="brand-box">
-                    <a className="back-icon">
+                <Button>
+                    <Link to="/tucredimonte" className="brand-box back-icon">
                         <i class="fas fa-chevron-left"></i>
-                        <img src={logo} className="home-logoCredi" alt="logo" />
-                    </a>
-                </Link>
+                    </Link>
+                    <img src={logo} className="home-logoCredi" alt="logo" />
+                </Button>
                 <p className="title-CrediMonte">Tus Creditos</p>
                 <section className="box-table">
                     <Table className="credit-table"  cellspacing="0">
