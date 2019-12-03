@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "25e984de33158d550df5d2ef80048453",
+    "revision": "45a0db0c093224882c79557238469cf9",
     "url": "/MiMonteDePiedad/index.html"
   },
   {
-    "revision": "963649f5540bf26d2a66",
+    "revision": "bf979f16381859dbb947",
     "url": "/MiMonteDePiedad/static/css/2.17e5ed98.chunk.css"
   },
   {
-    "revision": "5cbffb80bd398b74318f",
-    "url": "/MiMonteDePiedad/static/css/main.c2a7f8ad.chunk.css"
+    "revision": "89398a890c7e2a8151f8",
+    "url": "/MiMonteDePiedad/static/css/main.52ee3a09.chunk.css"
   },
   {
-    "revision": "963649f5540bf26d2a66",
-    "url": "/MiMonteDePiedad/static/js/2.1e1cd9e4.chunk.js"
+    "revision": "bf979f16381859dbb947",
+    "url": "/MiMonteDePiedad/static/js/2.ef41fb01.chunk.js"
   },
   {
-    "revision": "5cbffb80bd398b74318f",
-    "url": "/MiMonteDePiedad/static/js/main.df8ec049.chunk.js"
+    "revision": "89398a890c7e2a8151f8",
+    "url": "/MiMonteDePiedad/static/js/main.a60d3982.chunk.js"
   },
   {
     "revision": "06446b4ce9f429cab839",
