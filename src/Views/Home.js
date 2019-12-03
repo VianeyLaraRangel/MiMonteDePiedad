@@ -11,9 +11,7 @@ class Home extends Component {
         return (
             <div className="home-box">
                 <img src={logo} className="home-logo" alt="logo" />
-                <section>
                     <BreadCrumbs />
-                </section>
                 <section>
                     <Button color="info" className="btn-options">Solicitud de CrediMonte</Button>
                     <Button color="info" className="btn-options">Tu CrediMonte</Button>

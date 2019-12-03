@@ -18,7 +18,6 @@ class App extends Component {
         <Switch>
           <Route exact path='/' component={LogIn} />
           <Route path='/inicio' component={Home} /> 
-          {/* <Route path='/formulario' component={FormRequest} /> */}
           <Route path='/sobreti' component={FormSobreTi} />
           <Route path='/tusplanes' component={FormPlanes} />
           <Route path='/propuesta' component={CreditProposal} />
