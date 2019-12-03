@@ -7,10 +7,37 @@
 .home-logo {
     margin: 1rem;
     margin-left: 7rem;
+    margin-bottom: 2rem;
 }
 
-nav .home-option-box {
- color: yellow;   
+.home-logoCredi {
+    margin: 1rem;
+    margin-bottom: 2rem;   
+}
+
+.home-option-box {
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    margin-left: 1rem;
+}
+
+.breadcrumb {
+    background-color: #ffff;
+    border-bottom: 2px solid #6E6763;
+    margin-bottom: 5rem;
+}
+
+.breadcrumb-item a {
+    color: #9E002F;
+    font-weight: 520;
+    font-size: 20px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .7rem;
+    content: "";
 }
 
 .btn-options {
@@ -18,5 +45,65 @@ nav .home-option-box {
     border-color: #9E002F;
     margin-bottom: 5rem;
     width: 18rem;
-    font-weight: 500;
+    font-weight: 530;
+    font-size: 18px;
+    height: 41px;
 }
+
+.btn-options a p {
+    text-decoration: none;
+    color: #ffff;
+}
+
+.brand-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.back-icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-CrediMonte {
+    color: #9E002F;
+    font-weight: 600;
+    font-size: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+.fas {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #9E002F;
+    margin: 1rem;
+    font-size: 2rem;
+    padding-right: 2.5rem;
+}
+
+.box-table {
+    margin: 1rem;
+}
+
+.credit-table {
+    color: #5B534F;
+    font-weight: 500;
+    border: solid 1px #5B534F;
+    border-radius: 10px;
+}
+
+.tr-red {
+    border-style: solid;
+    border-bottom-color: #9E002F !important;
+}
+
+thead tr th {
+    padding: 5px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid black;
+    border-left: 0px;
+}
+
