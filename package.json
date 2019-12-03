@@ -2,7 +2,7 @@
   "name": "mimontedepiedad",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://vianeylararangel.github.io/MiMonteDePiedad/",
+  "homepage": "https://mercedesdavila.github.io/MiMonteDePiedad/",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "formik": "^2.0.6",

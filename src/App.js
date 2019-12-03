@@ -18,7 +18,7 @@ import Credits from './Views/Credits';
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={window.location.pathname || ""}>
         <Switch>
           <Route exact path='/' component={LogIn} />
           <Route  path='/SignUp' component={SignUp} />
