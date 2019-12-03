@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import NavBar from '../Components/Home/NavBarHome';
 import BreadCrumbs from '../Components/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
@@ -11,13 +10,13 @@ class Home extends Component {
     render() {
         return (
             <div className="home-box">
-                <img src={logo} className="logo-app" alt="logo" />
+                <img src={logo} className="home-logo" alt="logo" />
                 <section>
                     <BreadCrumbs />
                 </section>
                 <section>
-                    <Button color="info">Solicitar CrediMonte ></Button>
-                    <Button color="info">Tu CrediMonte ></Button>
+                    <Button color="info" className="btn-options">Solicitud de CrediMonte</Button>
+                    <Button color="info" className="btn-options">Tu CrediMonte</Button>
                 </section>
             </div>
         );

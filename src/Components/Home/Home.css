@@ -1,4 +1,22 @@
-nav {
-    background-color: #8E2334;
+.home-box {
+    text-align: center;
+    width: 100vw;
+    height: 100vh;
 }
 
+.home-logo {
+    margin: 1rem;
+    margin-left: 7rem;
+}
+
+nav .home-option-box {
+ color: yellow;   
+}
+
+.btn-options {
+    background-color: #9E002F;
+    border-color: #9E002F;
+    margin-bottom: 5rem;
+    width: 18rem;
+    font-weight: 500;
+}
