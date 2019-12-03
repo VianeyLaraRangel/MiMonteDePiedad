@@ -142,7 +142,14 @@ button {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    background-color: #white;
-    
+    background-color: white;
   }
+
+  .logo-app {
+    height: 37vw;
+    pointer-events: none;
+    margin-top: 70px;
+    margin-left: 2px;
+  }
+
 }

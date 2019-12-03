@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import NavBar from '../Components/Home/NavBarHome';
-import BreadCrumbs from '../Components/Home/BreadCrumbs';
+import HomeLinks from '../Components/Home/BreadCrumbs';
 
 import { Button } from 'reactstrap';
 
@@ -13,7 +13,7 @@ class Home extends Component {
             <div className="home-box">
                 <img src={logo} className="logo-app" alt="logo" />
                 <section>
-                    <BreadCrumbs />
+                    <HomeLinks />
                 </section>
                 <section>
                     <Button color="info">Solicitar CrediMonte ></Button>
