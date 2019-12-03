@@ -7,10 +7,32 @@
 .home-logo {
     margin: 1rem;
     margin-left: 7rem;
+    margin-bottom: 2rem;
 }
 
-nav .home-option-box {
- color: yellow;   
+.home-option-box {
+    display: flex;
+    justify-content: center;
+    width: 18rem;
+    margin-left: 1rem;
+}
+
+.breadcrumb {
+    background-color: #ffff;
+    border-bottom: 2px solid #6E6763;
+    margin-bottom: 5rem;
+}
+
+.breadcrumb-item a {
+    color: #9E002F;
+    font-weight: 520;
+    font-size: 20px;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    display: inline-block;
+    padding-right: .7rem;
+    content: "";
 }
 
 .btn-options {
@@ -18,5 +40,6 @@ nav .home-option-box {
     border-color: #9E002F;
     margin-bottom: 5rem;
     width: 18rem;
-    font-weight: 500;
+    font-weight: 530;
+    font-size: 18px;
 }
