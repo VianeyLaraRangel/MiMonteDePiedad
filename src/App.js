@@ -10,6 +10,7 @@ import FormSobreTi from './Views/FormSobreTi';
 import FormPlanes from './Views/FormPlanes';
 import CreditProposal from './Views/CreditProposal';
 import Payment from './Views/Payment';
+import CrediMonte from './Views/CrediMonte';
 
 class App extends Component {
   render() {
@@ -22,6 +23,7 @@ class App extends Component {
           <Route path='/tusplanes' component={FormPlanes} />
           <Route path='/propuesta' component={CreditProposal} />
           <Route path='/pago' component={Payment} />
+          <Route path='/tucredimonte' component={CrediMonte} />
         </Switch>
       </Router>
     );
