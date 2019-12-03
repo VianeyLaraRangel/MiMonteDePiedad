@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import logo from "../img/monte-de-piedad-white.png";
-import CodeForm from '../components/codeform';
+import CodeForm from '../Components/codeform';
+import '../App.css';
 
 class LogIn extends Component {
-    render() {
-        return (
-            <div className="login-screen">
-            <div className="backg-img">
-          <img src={logo} className="logo-app" alt="logo" />    
-          <h1 className="greeting-login"></h1>
-
+  render() {
+    return (
+      <div className="login-screen">
+        <div className="backg-img">
+          <img src={logo} className="logo-app" alt="logo" />
           <CodeForm />
 
           <h1 className="greeting-login" >Olvidaste tu contraseña</h1>
@@ -17,8 +16,8 @@ class LogIn extends Component {
 
         </div>
       </div>
-        );
-    }
+    );
+  }
 }
 
 export default LogIn;

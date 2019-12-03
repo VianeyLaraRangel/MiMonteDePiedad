@@ -1,9 +1,13 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react';     
+import FormTab from './Form/FormTab';
+
 
 class FormRequest extends Component {
     render() {
         return (
-            <p>Aquí se renderiza el formulario</p>
+            <section className="container-form">
+                <FormTab/>
+            </section>
         );
     }
 }
